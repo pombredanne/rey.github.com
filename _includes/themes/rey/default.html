@@ -10,23 +10,34 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link href="/assets/stylesheets/css/skeleton/skeleton.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/assets/stylesheets/css/skeleton/base.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/assets/stylesheets/css/skeleton/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/stylesheets/css/reset.css" rel="stylesheet" type="text/css" media="all">
     
     <link href="/assets/stylesheets/css/screen.css" rel="stylesheet" type="text/css" media="all">
+    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    
     <link rel="shortcut icon" href="/assets/images/rey.png">
   </head>
 
   <body>
-    <div class="container">
-      <header class="sixteen columns">
+    <section class="container">
+      <header>
         <h1><a class="brand" href="/">{{ site.title }}</a> <small>{{ site.tagline }}</small></h1>
       </header><!-- end 16c -->
 
         {{ content }}
         
-      <footer class="sixteen columns">
+        <aside>
+          <h2>About</h2>
+        
+          <p>This is the playground of <a href="http://reyhan.org">Reyhan Dhuny</a>.</p>
+          
+          <p>I post internets here + mess about with things that interest me.</p>
+          
+          <p>The current incarnation is flavoured by Jekyll, Bourbon (+ Neat) and some other things.</p>
+        </aside>
+        
+      <footer>
         <p> &lt;3 <a href="/"><a href="https://github.com/mojombo/jekyll">Jekyll</a> + <a href="http://getskeleton.com">Skeleton</p>
       </footer>
     </div><!-- end container -->

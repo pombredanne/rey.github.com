@@ -1,7 +1,22 @@
+@import "bourbon/bourbon"
+@import "neat/neat"
+
 $gutter: 20px
 
 body
   padding-top: $gutter
+  font-family: 'Open Sans', sans-serif
+  font-size: 14px
+
+p,
+ul li,
+ol li,
+h1,
+h2
+  margin-bottom: $gutter
+  
+p
+  line-height: 25px
 
 small
   display: none
@@ -19,4 +34,29 @@ pre
 footer
   border-top: 1px solid #ccc
   padding-top: $gutter
-  text-align: center
+  text-align: left
+  
+  
+  
+section.container
+  +outer-container
+  max-width: 780px
+  padding: 0 $gutter $gutter $gutter
+  header
+    +span-columns(12)
+  
+  section#posts
+    +span-columns(7)
+    
+  article
+    +span-columns(8)
+    h3
+      margin-bottom: $gutter/2
+  aside
+    +span-columns(4)
+    +omega
+    font-size: 14px
+    
+  footer
+    +span-columns(12)
+    text-align: center
